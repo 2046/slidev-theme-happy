@@ -1,22 +1,22 @@
 :root {
-  // default theme color
-  // can be overrided by uses `themeConfig` option
-  --slidev-theme-primary: #5d8392;
+  --slidev-slide-container-background: radial-gradient(circle at 40% 30%,rgb(235,243,249),rgb(214,222,228)) ;
 }
 
-.slidev-layout.cover,
-.slidev-layout.intro {
-  @apply h-full grid;
+html.dark,
+html:not(.dark) {
+  #slide-content {
+    color: #4A4A55;
+    --tw-bg-opacity: 0;
 
-  h1 {
-    @apply text-6xl leading-20;
+    ul {
+      list-style: disc;
+    }
   }
 
-  h1 + p {
-    @apply -mt-2 opacity-50 mb-4;
-  }
-
-  p + h2, ul + h2, table + h2 {
-    @apply mt-10;
+  .slides-overview {
+    #slide-content {
+      background-color: #F9FBFC;
+    }
   }
 }
+
