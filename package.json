@@ -14,7 +14,9 @@
     "build": "slidev build example.md",
     "dev": "slidev example.md --open",
     "export": "slidev export example.md",
-    "screenshot": "slidev export example.md --format png"
+    "screenshot": "slidev export example.md --format png",
+    "prepare": "husky install",
+    "commit": "npx git-cz"
   },
   "dependencies": {
     "@slidev/types": "^0.34.2",
@@ -24,7 +26,12 @@
     "theme-vitesse": "^0.4.10"
   },
   "devDependencies": {
-    "@slidev/cli": "^0.34.2"
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@slidev/cli": "^0.34.2",
+    "commitizen": "^4.2.4",
+    "cz-customizable": "^6.9.0",
+    "husky": "^8.0.1"
   },
   "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
   "slidev": {
@@ -37,6 +44,39 @@
         "mono": "Fira Code"
       },
       "hightlighter": "prism"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "cz.config.js"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "type-enum": [
+        2,
+        "always",
+        [
+          "build",
+          "chore",
+          "ci",
+          "docs",
+          "feat",
+          "fix",
+          "perf",
+          "refactor",
+          "revert",
+          "style",
+          "test",
+          "wip"
+        ]
+      ]
     }
   }
 }
