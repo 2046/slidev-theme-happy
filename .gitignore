@@ -1,8 +1,15 @@
-node_modules
+# Dependency directory
+/node_modules
+
+# -- OS X --
 .DS_Store
-dist
-*.local
-index.html
-.remote-assets
-.idea/
-components.d.ts
+
+# -- IDEA --
+/.idea
+
+# Output directory
+/dist
+
+# -- VSCode --
+/.vscode
+jsconfig.json
