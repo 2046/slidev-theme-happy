@@ -20,3 +20,18 @@ html:not(.dark) {
   }
 }
 
+.slides-overview {
+  z-index: 2;
+}
+
+.slides-overview + button {
+  z-index: 2;
+}
+
+html:not(.dark) .slidev-code.shiki {
+  background-color: #f8f8f8 !important;
+}
+
+html.dark .slidev-code.shiki {
+  background-color: #1b1b1b !important;
+}

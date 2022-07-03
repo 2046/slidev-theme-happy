@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "keywords": [
     "slidev-theme",
-    "slidev"
+    "slidev",
+    "slidev-theme-happy"
   ],
   "engines": {
     "node": ">=14.0.0",
@@ -31,7 +32,8 @@
     "highlighter": "all",
     "defaults": {
       "fonts": {
-        "sans": "Nunito Sans",
+        "sans": "-apple-system, BlinkMacSystemFont, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Segoe UI\", \"PingFang SC\", HarmonyOS_Regular, \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Helvetica Neue\", Helvetica, \"Source Han Sans SC\", \"Noto Sans CJK SC\", \"WenQuanYi Micro Hei\", Arial, sans-serif",
+        "local": "-apple-system, BlinkMacSystemFont, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Segoe UI\", \"PingFang SC\", HarmonyOS_Regular, \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Helvetica Neue\", Helvetica, \"Source Han Sans SC\", \"Noto Sans CJK SC\", \"WenQuanYi Micro Hei\", Arial, sans-serif",
         "mono": "Fira Code"
       },
       "hightlighter": "prism"
