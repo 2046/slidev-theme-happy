@@ -13,3 +13,6 @@
 # -- VSCode --
 /.vscode
 jsconfig.json
+
+# -- Slidev Config --
+components.d.ts
