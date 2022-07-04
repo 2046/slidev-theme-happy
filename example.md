@@ -1,5 +1,6 @@
 ---
 theme: ./
+layout: full
 ---
 
 # Slidev Theme Starter
