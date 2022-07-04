@@ -2,20 +2,21 @@
   --slidev-slide-container-background: radial-gradient(circle at 40% 30%,rgb(235,243,249),rgb(214,222,228));
 }
 
-html.dark #slide-content,
 html:not(.dark) #slide-content {
   color: #4A4A55;
   --tw-bg-opacity: 0;
 }
 
-html.dark #slide-content ul,
 html:not(.dark) #slide-content ul {
   list-style: disc;
 }
 
-html.dark .slides-overview #slide-content,
 html:not(.dark) .slides-overview #slide-content {
   background-color: #F9FBFC;
+}
+
+html:not(.dark) .slidev-layout .slidev-code.shiki {
+  background-color: #1b1b1b !important;
 }
 
 .slides-overview {
