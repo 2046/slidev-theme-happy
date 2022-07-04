@@ -34,15 +34,15 @@
     "husky": "^8.0.1"
   },
   "slidev": {
-    "colorSchema": "both",
-    "highlighter": "all",
+    "colorSchema": "light",
+    "highlighter": "shiki",
     "defaults": {
+      "lineNumbers": false,
       "fonts": {
         "sans": "-apple-system, BlinkMacSystemFont, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Segoe UI\", \"PingFang SC\", HarmonyOS_Regular, \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Helvetica Neue\", Helvetica, \"Source Han Sans SC\", \"Noto Sans CJK SC\", \"WenQuanYi Micro Hei\", Arial, sans-serif",
         "local": "-apple-system, BlinkMacSystemFont, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Segoe UI\", \"PingFang SC\", HarmonyOS_Regular, \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Helvetica Neue\", Helvetica, \"Source Han Sans SC\", \"Noto Sans CJK SC\", \"WenQuanYi Micro Hei\", Arial, sans-serif",
         "mono": "Fira Code"
-      },
-      "hightlighter": "prism"
+      }
     }
   },
   "config": {
