@@ -4,31 +4,22 @@
     height: 100%;
   }
 </style>
+
 <template>
   <Transform :scale="props.scale ? scale : 1" :origin="props.origin">
-    <div class="logo" :style="style">
-      <img :src="url" />
-    </div>
+    <img :src="url" />
   </Transform>
 </template>
+
 <script setup lang="ts">
-  import { computed, inject } from 'vue'
+  import { inject } from 'vue'
   import { injectionSlideScale } from '@slidev/client/constants'
 
   const props = defineProps<{
     url: string
-    width: number
-    height: number
     scale?: boolean
     origin?: string
   }>()
-
-  const style = computed(() => {
-    return {
-      width: props.width,
-      height: props.height
-    }
-  })
 
   const scale = inject(injectionSlideScale)
 </script>
