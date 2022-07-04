@@ -1,0 +1,17 @@
+# -- Github workflow --
+.github
+
+# -- Husky config --
+.husky
+
+# -- commit spec config --
+cz.config.js
+
+# -- Theme example --
+example.md
+
+# -- Project License --
+LICENSE
+
+# -- Project Readme  --
+README.md
