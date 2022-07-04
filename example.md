@@ -1,6 +1,10 @@
 ---
 theme: ./
 layout: full
+logo:
+  url: /node_modules/@slidev/client/assets/logo-title-horizontal.png
+  width: 111
+  height: 40
 ---
 
 # Slidev Theme Starter
