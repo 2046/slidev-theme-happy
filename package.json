@@ -33,7 +33,6 @@
     "cz-customizable": "^6.9.0",
     "husky": "^8.0.1"
   },
-  "//": "Learn more: https://sli.dev/themes/write-a-theme.html",
   "slidev": {
     "colorSchema": "both",
     "highlighter": "all",
