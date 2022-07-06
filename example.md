@@ -5,16 +5,27 @@ themeConfig:
   logo: /node_modules/@slidev/client/assets/logo-title-horizontal.png?w-111px,h-40px
 ---
 
-# Slidev Theme Starter
+# A Happy Slidev Theme
 
-Presentation slides for developers
-
-<div class="pt-12">
+<div class="pt-12 text-center">
   <span @click="next" class="px-2 p-1 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
     Press Space for next page <carbon:arrow-right class="inline"/>
   </span>
 </div>
 
+<style>
+  .slidev-page-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .slidev-page-1 h1 {
+    text-align: center;
+    font-size: 3.75rem;
+  }
+</style>
 ---
 
 # What is Slidev?
@@ -75,10 +86,36 @@ function updateUser(id: number, update: Partial<User>) {
 ```
 
 ---
-layout: center
-class: "text-center"
+
+# KeepScale
+
+Keeping the Scaling
+
+<KeepScale class="h-400px w-868px">
+  <img class="w-full h-full rounded-8px overflow-hidden" src="https://source.unsplash.com/collection/94734566/1920x1080" />
+</KeepScale>
+
 ---
 
-# Learn More
+# Speech
 
-[Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
+Text to Speech
+
+<div class="text h-80">
+  <Speech text="hello slidev" lang="en-US">
+    <p>Hello Slidev</p>
+  </Speech>
+</div>
+
+<style>
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text p {
+    font-size: 5.75rem;
+    font-family: Avenir Next;
+  }
+</style>
