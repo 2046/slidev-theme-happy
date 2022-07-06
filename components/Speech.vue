@@ -1,5 +1,5 @@
 <template>
-  <div class="z-1000">
+  <div class="z-1000 absolute">
     <slot />
     <iconoir-chat-bubble-translate class="absolute -top-4 -right-5 opacity-20" @click="speak" />
   </div>
