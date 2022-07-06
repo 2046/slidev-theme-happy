@@ -8,12 +8,14 @@
 <script setup lang="ts">
   const props = defineProps<{
     text: string
+    lang: string
   }>()
 
   function speak() {
     if ('speechSynthesis' in window) {
       const msg = new SpeechSynthesisUtterance()
       msg.text = props.text
+      msg.lang = props.lang
       window.speechSynthesis.speak(msg)
     } else {
       alert("Sorry, your browser doesn't support text to speech!")
