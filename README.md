@@ -31,7 +31,7 @@ This theme provides the following layouts:
 
 Use all space to display content without any cropping
 
-![full](https://i.imgur.com/UWXU41B.png)
+![full](https://i.imgur.com/zSdwPl6.png)
 
 ### Customized end page
 
@@ -53,7 +53,7 @@ keeping the scaling
 </KeepScale>
 ```
 
-![keep scale](https://i.imgur.com/5vGMd05.png)
+![keep scale](https://i.imgur.com/SdT9dPL.png)
 
 ### Speech
 
@@ -65,7 +65,7 @@ text to speech
 </Speech>
 ```
 
-![speech](https://i.imgur.com/EMGEunc.png)
+![speech](https://i.imgur.com/BThbCL4.png)
 
 ## License
 
