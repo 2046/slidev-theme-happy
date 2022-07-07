@@ -2,22 +2,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/slidev-theme-happy?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-happy)
 
-A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
-
-<!--
-  Learn more about how to write a theme:
-  https://sli.dev/themes/write-a-theme.html
---->
-
-<!--
-  run `npm run dev` to check out the slides for more details of how to start writing a theme
--->
-
-<!--
-  Put some screenshots here to demonstrate your theme
-
-  Live demo: [...]
--->
+A Happy theme for [Slidev](https://github.com/slidevjs/slidev).
 
 ## Install
 
@@ -29,22 +14,59 @@ theme: <b>happy</b>
 
 Learn more about [how to use a theme](https://sli.dev/themes/use).
 
+## Theme Config
+
+- support logo config, logo size using `QueryString` syntax setting
+
+```
+themeConfig:
+  logo: /node_modules/@slidev/client/assets/logo-title-horizontal.png?w-111px,h-40px
+```
+
 ## Layouts
 
 This theme provides the following layouts:
 
-> TODO:
+### Full `full`
+
+Use all space to display content without any cropping
+
+![full](https://i.imgur.com/UWXU41B.png)
+
+### Customized end page
+
+End page to add `['🌈', '⚡️', '💥', '🥳', '🎉', '✨']` effect
+
+![end](https://i.imgur.com/sGaXsVk.png)
 
 ## Components
 
 This theme provides the following components:
 
-> TODO:
+### KeepScale
 
-## Contributing
+keeping the scaling
 
-- `npm install`
-- `npm run dev` to start theme preview of `example.md`
-- Edit the `example.md` and style to see the changes
-- `npm run export` to generate the preview PDF
-- `npm run screenshot` to generate the preview PNG
+```html
+<KeepScale class="h-400px w-868px">
+  <img class="w-full h-full rounded-8px overflow-hidden" src="https://source.unsplash.com/collection/94734566/1920x1080" />
+</KeepScale>
+```
+
+![keep scale](https://i.imgur.com/5vGMd05.png)
+
+### Speech
+
+text to speech
+
+```html
+<Speech text="hello slidev" lang="en-US">
+  <p>Hello Slidev</p>
+</Speech>
+```
+
+![speech](https://i.imgur.com/EMGEunc.png)
+
+## License
+
+[MIT](LICENSE).
